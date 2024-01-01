@@ -1,0 +1,15 @@
+.header {
+    background-color: blue;
+    height: 6rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header-image {
+    height: 4rem;
+    width: 4rem;
+    margin: 1rem auto;
+    text-align: center;
+}

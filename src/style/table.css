@@ -1,0 +1,37 @@
+.table {
+    width: 96%;
+    background-color: white;    
+    border: none;
+    margin: 0.2rem;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-spacing: 0;
+    border-radius: 8px;
+}
+.table-header-cell,
+.table-cell {
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.table-header {
+    background-color: blue;
+    border: 0;
+}
+
+.table-header-cell {
+    color: white;
+}
+
+.table-body {
+    border: 2px solid black;
+    text-align: center;
+}
+
+.table-row {
+    border: 2px solid black;
+}
+
+.table-row:hover {
+    background-color: rgb(190, 190, 190);
+}
+
