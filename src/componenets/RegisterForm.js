@@ -22,7 +22,7 @@ const RegisterForm = ({handleClose}) => {
     const submitHandler = (event) => {
         event.preventDefault();
         console.log(fields)
-        postData("/",fields).then((response) => {
+        postData("employees/",fields).then((response) => {
             console.log(response)
             if(response.status === 201){
                 window.alert("Employee Registered Successfully")

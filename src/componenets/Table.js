@@ -17,8 +17,12 @@ const Table = ({ employees, fetchEmployees }) => {
 
 
   const handleDelete = async (_id) => {
+    const userConfirmed = window.confirm("Are you sure you want to delete?");
+    if (!userConfirmed) {
+      return;
+    }
     try {
-      const deletedData = await deleteData(`/${_id}`);
+      const deletedData = await deleteData(`employees/${_id}`);
       console.log(deletedData);
       if (deletedData.status === 200) {
         window.alert("Employee Deleted Successfully");

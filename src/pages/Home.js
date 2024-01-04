@@ -66,9 +66,6 @@ const Home = () => {
           height: "80%",
         },
       };
-
-    console.log(currentPage)
-    
     return <>
         <Header />
         <div className="home-body">

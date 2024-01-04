@@ -8,7 +8,7 @@ const Input = ({
     label,name,value,type,onChange}) => {
     return <div className="input-group">
         <label htmlFor={name} className="input-label">{label}</label>
-        <input id={name} className="input" name={name} value={value} onChange={onChange}></input>
+        <input id={name} className="input" type={type} name={name} value={value} onChange={onChange}></input>
     </div>
 }
 

@@ -29,13 +29,11 @@ const EditForm = ({handleClose,item}) => {
 
     const submitHandler = (event) => {
         event.preventDefault();
-        console.log(fields)
-        putData(`/${item._id}`,fields).then((response) => {
+        putData(`employees/${item._id}`,fields).then((response) => {
             console.log(response)
             if(response.status === 200){
                 window.alert("Employee Data Updated Successfully")
                 const data = response.data
-                console.log("------------------------------------------")
                 console.log(data)
                 dispatch({
                     type: "CLEAR_FORM"

@@ -1,9 +1,12 @@
 .header {
-    background-color: blue;
+    background-color: #0099ff;
+    color: #fff;
     height: 6rem;
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.4rem;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -12,4 +15,36 @@
     width: 4rem;
     margin: 1rem auto;
     text-align: center;
+}
+
+.left-header {
+    margin: auto 2rem;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.left-header h3 {
+    margin: 1rem;
+}
+
+.right-header {
+    margin: auto 2rem;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.right-header p {
+    margin: 0.5rem;
+}
+
+.logout, .profile {
+    padding: 1rem;
+    cursor: pointer;
 }

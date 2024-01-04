@@ -1,5 +1,6 @@
 .cutsom-button {
-    background-color: blue;
+
+    background-color: #0099ff;
     cursor: pointer;
     color: white;
     border: none;
@@ -13,5 +14,5 @@
 }
 
 .cutsom-button:hover {
-    background-color: rgba(0, 0, 161, 0.904);
+    background-color: rgba(0, 0, 255, 0.904);
 }

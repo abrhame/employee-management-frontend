@@ -1,0 +1,41 @@
+.profile-page {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 3rem auto;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .profile-header {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 10px;
+
+  }
+  
+  .profile-body {
+    padding: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .profile-body h5 {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+  }
+  
+
