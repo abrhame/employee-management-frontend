@@ -9,6 +9,7 @@ const initialState = {
 }
 
 export default function formReducer(state = initialState, action){
+
     switch(action.type){
         case 'SET_FORM':
             return {

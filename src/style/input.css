@@ -24,3 +24,24 @@
     outline: none;
   }
   
+
+  @media (max-width: 600px) {
+    .input-label {
+      font-size: 12px;
+    }
+  
+    .input {
+      font-size: 14px;
+    }
+  }
+
+
+  @media (max-width: 400px) {
+    .input-label{
+      font-size: 10px;
+    }
+  
+    .input{
+      font-size: 12px;
+    }
+  }

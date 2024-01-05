@@ -35,3 +35,31 @@
     background-color: rgb(190, 190, 190);
 }
 
+@media (max-width: 580px) {
+    .table {
+        width: 100vw;
+        overflow-x: scroll;
+        font-size: 0.9rem;
+    }
+
+    .table-header-cell,
+.table-cell{
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+}
+
+
+@media (max-width: 400px){
+    .table{
+        font-size: 0.5rem;
+    }
+
+    .table-header-cell,
+    .table-cell{
+        padding: 0.5rem;
+        box-sizing: border-box;
+    }
+}   
+

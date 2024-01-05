@@ -10,3 +10,28 @@
     margin: 1rem 2rem   ;
     padding: 0.5rem;
 }
+
+.scrollable-table {
+    width: 100%;    
+}
+
+@media (max-width: 600px) {
+    .scrollable-table {
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+    .pagination button{
+        font-size: 0.7rem;
+        padding: 0.6;
+        
+    }
+}
+
+@media (max-width: 400px){
+
+    .pagination button{
+        font-size: 0.5rem;
+        padding: 0.4rem;
+    }
+}   

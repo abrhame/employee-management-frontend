@@ -16,3 +16,21 @@
 .cutsom-button:hover {
     background-color: rgba(0, 0, 255, 0.904);
 }
+
+
+@media (max-width: 600px) {
+    .cutsom-button {
+        font-size: 0.7rem;
+    }
+
+}
+
+
+@media (max-width: 400px){
+    .cutsom-button{
+        font-size: 0.5rem;
+        padding: 0.7rem;
+    }
+
+
+}   

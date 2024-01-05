@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect ,useState} from "react";
 import { useDispatch,useSelector, connect } from "react-redux";
 import Button from "./Button";
 import { FaRegTrashAlt, FaEdit } from "react-icons/fa";
@@ -10,6 +10,7 @@ import EditForm from "./EditForm";
 
 const Table = ({ employees, fetchEmployees }) => {
   const dispatch = useDispatch();
+  const [employee, setEmployee] = useState()
   const isOpen = useSelector(state => state.editModal.isOpen);
   useEffect(() => {
     fetchEmployees();
@@ -40,11 +41,20 @@ const Table = ({ employees, fetchEmployees }) => {
 
   const handleClose = () => {
     dispatch({
+      type: "CLEAR_FORM",
+    })
+    dispatch({
       type: "CLOSE_MODAL",
     })
   }
 
+  const getEditItem = (item) => { 
+    setEmployee(item)
+  }
+
   const handleOpen = () => {
+    // dispatch(editField(item))
+
     dispatch({
       type: "OPEN_MODAL",
     })
@@ -92,14 +102,17 @@ const Table = ({ employees, fetchEmployees }) => {
               <td className="table-cell">{item.department}</td>
               <td className="table-cell">{item.role}</td>
               <td className="table-cell">
-                <Button onClick={handleOpen} Children={<FaEdit />} />
+                <Button onClick={() => {
+                  handleOpen()
+                  getEditItem(item)
+                }} Children={<FaEdit />} ></Button>
                 <Button
                   onClick={() => handleDelete(item._id)}
                   Children={<FaRegTrashAlt />}
                 />
               </td>
               <Modal  style={customStyles} isOpen={isOpen} onRequestClose={handleClose} contentLabel="edit">
-        <EditForm handleClose={handleClose} item = {item} />
+        <EditForm handleClose={handleClose} item = {employee} />
     </Modal>
             </tr>
             

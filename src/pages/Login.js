@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, json, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import Input from "../componenets/Input";
 import Card from "../componenets/Card";

@@ -8,14 +8,14 @@ import { editField } from "../redux/actions";
 
 const EditForm = ({handleClose,item}) => {
     const dispatch = useDispatch();
+
     useEffect(() => {
-        // Dispatch the 'editField' action when the component mounts
+
         dispatch(editField(item));
       }, [dispatch, item]);
-    console.log(item)
-    
+
     const fields = useSelector(state => state.form.fields)
-    
+
     const handleChange = (event) => {
         event.preventDefault();
         dispatch({
@@ -34,7 +34,6 @@ const EditForm = ({handleClose,item}) => {
             if(response.status === 200){
                 window.alert("Employee Data Updated Successfully")
                 const data = response.data
-                console.log(data)
                 dispatch({
                     type: "CLEAR_FORM"
                 })
@@ -47,6 +46,7 @@ const EditForm = ({handleClose,item}) => {
                     },
                 })
                 handleClose()
+
             }
         })
 

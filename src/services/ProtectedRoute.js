@@ -15,13 +15,13 @@ const ProtectedRoute = ({ children }) => {
             }
 
             try {
-                console.log(token)
+                
                 const response = await axios.get('https://employee-management-sdpg.onrender.com/validate', {
                     headers: {
                         authorization: `Bearer ${token}`,
                     },
                 });
-                console.log(response)
+ 
                 setIsAuthenticated(response.data); // Expect a boolean value
             } catch (error) {
                 navigate('/login');

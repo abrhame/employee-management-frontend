@@ -70,12 +70,16 @@ const Home = () => {
         <Header />
         <div className="home-body">
         <Button onClick={handleOpen} Children="Register" />
+        <div className="scrollable-table">
         <Table />
         <div className="pagination">
             <Button onClick={handlePrevPage} Children="Prev"/>
             <Button onClick={handleRegister} Children={String(currentPage)}/>
             <Button onClick={handleNextPage} Children="Next"/> 
         </div>
+        </div>
+        
+
         </div>
         <Modal style={customStyles} isOpen={isOpen} onRequestClose={handleClose} contentLabel="Modal" >
             <RegisterForm handleClose={handleClose} />

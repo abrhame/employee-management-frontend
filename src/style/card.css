@@ -49,3 +49,27 @@
     align-items: center;
     margin-bottom: 30%;
 }
+
+
+@media (max-width: 695px) {
+    .card {
+        width: 40%;
+    }
+}
+
+@media (max-width: 650px) {
+    .card {
+        width: 60%;
+        height: 70%;
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .card {
+        width: 80%;
+        height: 60%;
+        padding: 0.3rem;
+        margin: 0.5rem auto;
+    }
+}

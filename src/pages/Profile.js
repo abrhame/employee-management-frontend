@@ -1,5 +1,4 @@
 import React from "react";
-import Card from "../componenets/Card";
 import "../style/profile.css";
 import Header from "../componenets/Header";
 
